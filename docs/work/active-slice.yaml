@@ -1,0 +1,27 @@
+version: 2
+repo: MathieuLaureti/traffic_game
+feature_slug: mvp-foundation
+input_doc: docs/input/2026-11-19-traffic-grid-transport-game.md
+delivery_mode: batch
+phase: pr_open
+gates:
+  gate_1:
+    approved_at: "2026-11-19T22:10:00-05:00"
+    user_quote: "yes create a repo too i never made it"
+  gate_2:
+    approved_at: "2026-11-19T22:10:00-05:00"
+    user_quote: "lets build a first mvp with all the details mentioned"
+issues:
+  - number: 1
+    url: https://github.com/MathieuLaureti/traffic_game/issues/1
+    title: "MVP foundation: Bevy workspace and playable demo scenario"
+branch: feature/mvp-foundation
+pr:
+  number: null
+  url: ""
+  state: open
+delivery_report: docs/delivery/feature-mvp-foundation.md
+labels:
+  managed: agent-managed
+updated_at: "2026-11-19T22:15:00-05:00"
+updated_by: orchestrator
