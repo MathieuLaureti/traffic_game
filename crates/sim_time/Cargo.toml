@@ -1,0 +1,8 @@
+[package]
+name = "traffic_sim_time"
+description = "Simulation clock and schedule helpers"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+serde.workspace = true

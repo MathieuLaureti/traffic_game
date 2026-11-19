@@ -1,0 +1,8 @@
+[package]
+name = "traffic_pathing"
+description = "Grid pathfinding"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+traffic_world = { path = "../world" }

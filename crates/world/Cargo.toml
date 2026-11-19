@@ -1,0 +1,11 @@
+[package]
+name = "traffic_world"
+description = "Grid map, POIs, and scenario loading"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+traffic_sim_time = { path = "../sim_time" }

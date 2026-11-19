@@ -1,0 +1,10 @@
+[package]
+name = "traffic_traffic"
+description = "Vehicles and intersection controllers"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+serde.workspace = true
+traffic_world = { path = "../world" }
+traffic_agents = { path = "../agents" }

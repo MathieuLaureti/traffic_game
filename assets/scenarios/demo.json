@@ -1,0 +1,120 @@
+{
+  "name": "demo_rush",
+  "width": 15,
+  "height": 11,
+  "tiles": [
+    "BBBBBBBBBBBBBBB",
+    "B..RRRRIRRRR..B",
+    "B.RRRRRRRRRRR.B",
+    "B.RRRRRRRRRRR.B",
+    "BIRIIRIIIIRIIRB",
+    "B.RRRRRRRRRRR.B",
+    "B.RRRRRRRRRRR.B",
+    "B..RRRRIRRRR..B",
+    "BBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBB"
+  ],
+  "pois": [
+    {
+      "id": "home_a",
+      "position": { "x": 2, "y": 8 },
+      "access_road": { "x": 2, "y": 7 },
+      "kind": { "type": "living" }
+    },
+    {
+      "id": "home_b",
+      "position": { "x": 12, "y": 8 },
+      "access_road": { "x": 12, "y": 7 },
+      "kind": { "type": "living" }
+    },
+    {
+      "id": "office_1",
+      "position": { "x": 2, "y": 2 },
+      "access_road": { "x": 2, "y": 3 },
+      "kind": { "type": "job_tier3", "schedule_profile": "standard_9_5" }
+    },
+    {
+      "id": "office_2",
+      "position": { "x": 12, "y": 2 },
+      "access_road": { "x": 12, "y": 3 },
+      "kind": { "type": "job_tier3", "schedule_profile": "early_shift" }
+    },
+    {
+      "id": "cafe",
+      "position": { "x": 6, "y": 2 },
+      "access_road": { "x": 6, "y": 3 },
+      "kind": {
+        "type": "service_tier2",
+        "variant": "Food",
+        "schedule_profile": "standard_9_5"
+      }
+    },
+    {
+      "id": "cinema",
+      "position": { "x": 8, "y": 2 },
+      "access_road": { "x": 8, "y": 3 },
+      "kind": {
+        "type": "service_tier2",
+        "variant": "Entertainment",
+        "schedule_profile": "standard_9_5"
+      }
+    },
+    {
+      "id": "mart",
+      "position": { "x": 10, "y": 2 },
+      "access_road": { "x": 10, "y": 3 },
+      "kind": {
+        "type": "service_tier2",
+        "variant": "Necessities",
+        "schedule_profile": "standard_9_5"
+      }
+    }
+  ],
+  "intersections": [
+    { "pos": { "x": 5, "y": 4 }, "controller": "stop" },
+    { "pos": { "x": 7, "y": 4 }, "controller": "light" },
+    { "pos": { "x": 9, "y": 4 }, "controller": "roundabout" },
+    { "pos": { "x": 5, "y": 7 }, "controller": "light" },
+    { "pos": { "x": 9, "y": 7 }, "controller": "stop" }
+  ],
+  "agents": [
+    {
+      "id": "npc_1",
+      "home_poi": "home_a",
+      "workplace_poi": "office_1",
+      "schedule_profile": "standard_9_5",
+      "jitter_minutes": -5
+    },
+    {
+      "id": "npc_2",
+      "home_poi": "home_a",
+      "workplace_poi": "cafe",
+      "schedule_profile": "standard_9_5",
+      "jitter_minutes": 8
+    },
+    {
+      "id": "npc_3",
+      "home_poi": "home_b",
+      "workplace_poi": "office_2",
+      "schedule_profile": "early_shift",
+      "jitter_minutes": 0
+    },
+    {
+      "id": "npc_4",
+      "home_poi": "home_b",
+      "workplace_poi": "cinema",
+      "schedule_profile": "standard_9_5",
+      "jitter_minutes": 12
+    },
+    {
+      "id": "npc_5",
+      "home_poi": "home_a",
+      "workplace_poi": "mart",
+      "schedule_profile": "late_shift",
+      "jitter_minutes": -2
+    }
+  ],
+  "commute_buffer_minutes": 45,
+  "seed": 42
+}

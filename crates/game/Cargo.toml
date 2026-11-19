@@ -1,0 +1,17 @@
+[package]
+name = "traffic_game"
+description = "Bevy front-end for the traffic simulation"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "traffic_game"
+path = "src/main.rs"
+
+[dependencies]
+bevy.workspace = true
+traffic_sim_time = { path = "../sim_time" }
+traffic_world = { path = "../world" }
+traffic_agents = { path = "../agents" }
+traffic_pathing = { path = "../pathing" }
+traffic_traffic = { path = "../traffic" }

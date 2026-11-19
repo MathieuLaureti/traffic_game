@@ -1,0 +1,10 @@
+[package]
+name = "traffic_agents"
+description = "NPC needs, schedules, and trip planning"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+serde.workspace = true
+traffic_sim_time = { path = "../sim_time" }
+traffic_world = { path = "../world" }
