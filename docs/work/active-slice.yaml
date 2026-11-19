@@ -17,8 +17,8 @@ issues:
     title: "MVP foundation: Bevy workspace and playable demo scenario"
 branch: feature/mvp-foundation
 pr:
-  number: null
-  url: ""
+  number: 2
+  url: https://github.com/MathieuLaureti/traffic_game/pull/2
   state: open
 delivery_report: docs/delivery/feature-mvp-foundation.md
 labels:
